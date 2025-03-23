@@ -6,78 +6,64 @@
 
 <div align="center">
 
-![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-[![Discord](https://img.shields.io/badge/Discord-4903FC?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/ffhvuXTwyV)
-[![QQ](https://img.shields.io/badge/QQ-4903FC?style=for-the-badge&logoColor=white)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=LwxydGEvBZJnn09sXOjkQo9tuuLcYwx5&authKey=seyY5pPUCIHMWS5FqVryq926T0G2GarSXetpxxV9DJxBVt%2FPcg1vxN%2F%2FXpsCowyk&noverify=0&group_code=762054349)
-![Downloads](https://img.shields.io/github/downloads/FCL-Team/FoldCraftLauncher/total?color=green&style=for-the-badge)
+[![Android CI](https://github.com/FCL-Team/FoldCraftLauncher/actions/workflows/main.yml/badge.svg)](https://github.com/FCL-Team/FoldCraftLauncher/actions/workflows/main.yml)
+![Downloads](https://img.shields.io/github/downloads/FCL-Team/FoldCraftLauncher/total?style=flat-square&color=f18cb9)
+![Release](https://img.shields.io/github/v/release/FCL-Team/FoldCraftLauncher?style=flat-square&color=f18cb9)
 
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://afdian.net/@tungs)
+[![Discord](https://img.shields.io/badge/Discord-red?logo=discord&logoColor=white)](https://discord.gg/ffhvuXTwyV)
+[![QQ](https://img.shields.io/badge/QQ-green)](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=LwxydGEvBZJnn09sXOjkQo9tuuLcYwx5&authKey=seyY5pPUCIHMWS5FqVryq926T0G2GarSXetpxxV9DJxBVt%2FPcg1vxN%2F%2FXpsCowyk&noverify=0&group_code=762054349)
+[![Sponsor](https://img.shields.io/badge/sponsor-blue?logo=GitHub-Sponsors)](https://afdian.com/@tungs)
 
 </div>
 
-- [Fold Craft Launcher](https://fcl-team.github.io/)：本应用致力于在 Android 设备上运行 Minecraft: Java Edition，并允许用户下载、管理游戏，添加自定义控制等。
+🌍 **语言**  
+简体中文 | [English](./README_EN.md) | [Русский язык](./README_RU.md)
 
-- **在你的 Android 设备上运行 Minecraft: Java Edition**，且支持所有版本以及部分模组。
+> 你说得对，但是「FCL」是由FCL-Team基于[HMCL](https://github.com/HMCL-dev/HMCL)的核心功能，结合[PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)后端和[Boat](https://github.com/AOF-Dev/Boat)后端开发的Minecraft Java版启动器。启动器运行在一个被称作「安卓」的系统，在这里，被系统选中的人将被授予「JVM」，导引Java之力。你将扮演一位名为「小白」的神秘用户，在自由的使用中安装不同版本、各有千秋独特的模组，和它们一起运行，找出崩溃闪退的原因，同时逐步发掘「xxException:」的真相。
 
-<h1 align="center">功能</h1>
+> ✨ **项目简介**  
+> 「Fold Craft Launcher」是由FCL团队开发的Android平台Minecraft: Java Edition启动器。基于[HMCL](https://github.com/HMCL-dev/HMCL)的核心功能，结合[PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)后端和[Boat](https://github.com/AOF-Dev/Boat)后端，让您能在移动设备上畅玩Java版MC，支持模组加载与全版本运行。
 
-- [x] 运行所有版本 Minecraft
-- [x] 运行 Forge，LiteLoader，OptiFine，Fabric，Quilt 及其他
-- [x] Java 8 和 Java 17
-- [x] 虚拟鼠标
-- [x] 下载安装模组、整合包、资源包和存档
-- [x] 使用部分光影（使用 VirGL）
-- [x] 创建自定义控件布局
-- [x] 自定义启动器主题和背景
-- [x] 其他更多功能可自行探索
+---
 
-<h1 align="center">截图</h1>
+## 🚀 核心特性
+
+✅ **全版本支持**  
+- 原生支持 Minecraft 全版本（包括最新快照）
+- 模组加载器支持：Forge/NeoForge/LiteLoader/OptiFine/Fabric/Quilt...
+
+⚙️ **功能亮点**  
+- 内置多版本 Java 运行时（Java 8/11/17/21）同时支持导入Java
+- 虚拟鼠标与自定义按键映射
+- 光影支持（需VirGL/Zink/MG渲染器）
+- 动态资源管理（模组/整合包/材质/光影/存档）
+- 个性化主题定制（背景/颜色方案）
+- 支持[渲染器插件化](https://github.com/ShirosakiMio/FCLRendererPlugin)
+
+---
+
+## 🎮 使用截图
 
 ![GameScreen1](/assets/img/docs/introduction/ui_main_light.jpg)
 ![GameScreen2](/assets/img/docs/introduction/ui_main_dark.jpg)
 ![GameScreen3](/assets/img/docs/introduction/game.jpg)
 
-<h1 align="center">编译/构建</h1>
+---
 
-你可以使用 **Android Studio** 及 **Android SDK & NDK** 编译。
-从下方链接克隆仓库。
-```
-https://github.com/FCL-Team/FoldCraftLauncher.git
-```
-然后，使用 Android Studio 进行编译。
+## 📜 开源协议
 
-<h1 align="center">协议</h1>
+本项目采用 **[GPL-3.0 License](https://www.gnu.org/licenses/gpl-3.0.html)** 授权
 
-本软件遵循 [GPL-v3](https://www.gnu.org/licenses/gpl-3.0.html) 协议。
-```
-Fold Craft Launcher is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+---
 
-Fold Craft Launcher is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+## 🤝 贡献与致谢
+### 贡献者墙
+<a href="https://github.com/FCL-Team/FoldCraftLauncher/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=FCL-Team/FoldCraftLauncher" />
+</a>
 
-You should have received a copy of the GNU General Public License
-along with Fold Craft Launcher.  If not, see <https://www.gnu.org/licenses/>.
-```
-
-<h1 align="center">引用的第三方内容</h1>
-
-- [HMCL](https://github.com/huanghongxun/HMCL)
-
-- [Boat and related projects](https://github.com/AOF-Dev/Boat)
-
-- [PojavLauncher and related projects](https://github.com/PojavLauncherTeam/PojavLauncher)
-
+### 相关项目
+- [HMCL](https://github.com/HMCL-dev/HMCL)
+- [Boat 及其相关项目](https://github.com/AOF-Dev/Boat)
+- [PojavLauncher 及其相关项目](https://github.com/PojavLauncherTeam/PojavLauncher)
 - [authlib-injector](https://github.com/yushijinhun/authlib-injector)
-
-<h1 align="center">赞助</h1>
-
-<div align="center">
-
-[![Sponsor](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://afdian.net/@tungs)
-
-</div>
